@@ -1,7 +1,7 @@
 # WorkflowLib
 Library offering primitives to build and manage evented/nestable/configurable workflows in javascript.
 
-#Description
+# Description
 
 The library is contained in AMD module define function. The exported object ha a single method **getFlow(name)**, which returns a singleton instance of a named workflow.
 
@@ -10,7 +10,7 @@ The obtained flow can then be configured or started.
 Every node in the workflow has a handle function which represents the execution core of the node.
 Its first argument is the flow itself. Every flow has the attribute **state** which contains the current custom state of the flow. Every node handle function is responsible to make the flow advance or abort it.
 
-#Usage
+# Usage
 
 Assume that the exported object is assigned to the global variable _wfManager_.
 
@@ -66,7 +66,7 @@ function(state){
 </pre>
 
 
-#Flow object
+# Flow object
 
 A workflow is a instance of a private class **Workflow**.
 
